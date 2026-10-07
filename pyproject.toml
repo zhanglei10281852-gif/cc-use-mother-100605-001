@@ -5,5 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "experience_registry"
 version = "0.1.0"
+description = "装备厂故障判断与工艺诀窍的版本化、复核制经验知识库后端"
 requires-python = ">=3.11"
+dependencies = []
 
+[project.scripts]
+experience-registry = "experience_registry.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

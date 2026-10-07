@@ -1,0 +1,34 @@
+[
+  {
+    "import_id": "legacy-001",
+    "content": {
+      "title": "CW6163B 主轴轴向位移的判断方法",
+      "kind": "fault_judgement",
+      "equipment_model": "CW6163B",
+      "process": "主轴装配",
+      "conditions": ["空载低速", "环境温度20-30℃"],
+      "content": "将百分表吸在主轴箱端面，表头顶在主轴端孔内，手动撬动主轴，读数超过0.02mm即判定轴向位移过大。",
+      "conclusion": "轴向位移超过0.02mm需更换止推轴承并复测。",
+      "evidence_sources": [
+        {"kind": "field_verification", "reference": "验证批次2026-09-A17", "verified_at": "2026-09-12", "note": "三车间2号机组复测两次"}
+      ],
+      "tags": ["主轴", "百分表"]
+    }
+  },
+  {
+    "import_id": "legacy-002",
+    "content": {
+      "title": "CB-B25 液压泵流量不足处理",
+      "kind": "process_knowhow",
+      "equipment_model": "CB-B25",
+      "process": "液压系统检修",
+      "conditions": ["系统压力低于4MPa", "油温40℃以下"],
+      "content": "流量不足时先检查溢流阀开度与吸油滤网堵塞情况，清洗排气后仍不足再更换油泵。",
+      "conclusion": "清洗滤网、调整溢流阀后流量恢复额定值；更换油泵后必须排气试运行30分钟。",
+      "evidence_sources": [
+        {"kind": "work_order", "reference": "WO-20260820-07", "verified_at": "2026-08-20"}
+      ],
+      "tags": ["液压", "油泵"]
+    }
+  }
+]
